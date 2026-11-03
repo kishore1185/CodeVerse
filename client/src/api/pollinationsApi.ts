@@ -1,12 +1,4 @@
-import axios, { AxiosInstance } from "axios"
+// Deprecated: Re-exporting aiApi for backward compatibility
+import aiApi from "./aiApi"
 
-const pollinationsBaseUrl = "https://text.pollinations.ai"
-
-const instance: AxiosInstance = axios.create({
-    baseURL: pollinationsBaseUrl,
-    headers: {
-        "Content-Type": "application/json",
-    },
-})
-
-export default instance
+export default aiApi

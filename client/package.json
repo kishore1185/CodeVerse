@@ -10,6 +10,7 @@
         "preview": "vite preview --host 0.0.0.0"
     },
     "dependencies": {
+        "@types/three": "^0.187.0",
         "@uiw/codemirror-extensions-color": "^4.21.21",
         "@uiw/codemirror-extensions-hyper-link": "^4.21.21",
         "@uiw/codemirror-extensions-langs": "^4.21.21",
@@ -33,6 +34,7 @@
         "react-tooltip": "^5.28.0",
         "screenfull": "^6.0.2",
         "socket.io-client": "^4.7.3",
+        "three": "^0.187.0",
         "tldraw": "^2.1.4",
         "uuid": "^9.0.1",
         "vscode-icons-js": "^11.6.1"

@@ -6,6 +6,7 @@ import { SocketEvent, SocketId } from "./types/socket"
 import { USER_CONNECTION_STATUS, User } from "./types/user"
 import { Server } from "socket.io"
 import path from "path"
+import aiRoutes from "./routes/aiRoutes"
 
 dotenv.config()
 
@@ -16,6 +17,9 @@ app.use(express.json())
 app.use(cors())
 
 app.use(express.static(path.join(__dirname, "public"))) // Serve static files
+
+// AI Routes
+app.use("/api/ai", aiRoutes)
 
 const server = http.createServer(app)
 const io = new Server(server, {
